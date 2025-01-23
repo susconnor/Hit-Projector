@@ -34,7 +34,7 @@ data['spray_angle'] = spray_angle
 This project uses [Extreme Gradient Boosting](https://xgboost.readthedocs.io/en/stable/) ([XGBoost Classifier](https://xgboost.readthedocs.io/en/latest/python/python_api.html#xgboost.XGBClassifier))
 to classify outcomes as hits or outs. The dataset is split into training (80%) and testing (20%) subsets. Early stopping is used to prevent overfitting. The model's predictions are assessed using a classification report, which provides the following metrics: Precision, Recall, F1-Score, and Accuracy. 
 
-![classification report](readme-images\classification_report.png)
+![classification report](readme-images/classification_report.png)
 
 With 0 representinmg an out and 1 a hit, we see that the model is better at predicting outs. This is to be expected because outs are more common in baseball, leading to an imbalanced dataset from Baseball Savant. 
 
@@ -42,11 +42,11 @@ With 0 representinmg an out and 1 a hit, we see that the model is better at pred
 ## Predicting Batted Ball Outcomes
 Using the sliders below the last cell, adjust the ball's exit velocity, launch angle, spray angle, and batter's handedness. Select Predict Outcome. 
 
-![prediction](readme-images\prediction.png)
+![prediction](readme-images/prediction.png)
 
 The three graphs visualize each batted ball in the dataset, with black representing outs, gray for hits, and the predicted ball highlighted in peach. These visualizations help explain why the predicted ball was classified as a hit or an out. If your ball was a hit, you should see it grouped with other hits in one or more of these graphs. Similarly, if it was an out, it should align with other outs. This grouping reflects the model's reliance on patterns in the data to make accurate predictions.
 
-![graphs](readme-images\graphs.png)
+![graphs](readme-images/graphs.png)
 
 ## Setup using Google Colab
 1. Using the menu bar at the top of the page, select: File -> Upload Notebook -> GitHub

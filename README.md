@@ -60,7 +60,3 @@ The three graphs visualize each batted ball in the dataset, with black represent
 
 ## Acknowledgments
 - This project makes use of the [pybaseball](https://github.com/jldbc/pybaseball) library, developed by [James LeDoux](https://github.com/jldbc) and contributors. It provides an easy interface for accessing Statcast data and other baseball statistics.   
-
----
----
----
